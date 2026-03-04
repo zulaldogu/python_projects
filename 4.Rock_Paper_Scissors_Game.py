@@ -52,3 +52,4 @@ elif (user == 0 and computer == 1) or (user == 1 and computer == 2) or (user == 
     print("YOU LOSE!")
 elif (user == 0 and computer == 2) or (user == 1 and computer == 0) or (user == 2 and computer == 1):
     print("YOU WIN!")
+#commit change
