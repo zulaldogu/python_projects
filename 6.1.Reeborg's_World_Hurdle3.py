@@ -17,3 +17,4 @@ while not at_goal():
         jump()
     else:
         move()
+#commit change
