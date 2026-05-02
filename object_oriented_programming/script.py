@@ -34,3 +34,15 @@ person1.greet()
 
 person2 = Person("Bob", 42)
 person2.greet()
+
+class User:
+    def __init__(self, username, email, password):
+        self.username = username
+        self.email = email
+        self.password = password
+    def say_hi_to_user(self, user):
+        print(f"Sending message to {user.username}: Hi {user.username}, it's {self.username}.")
+
+user1 = User("dantheman", "dan@gmail.com", "123")
+user2 = User("batman", "bat@outlook.com", "abc")
+user1.say_hi_to_user(user2)
