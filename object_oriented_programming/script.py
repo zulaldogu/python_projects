@@ -45,7 +45,13 @@ class User:
         return self._email
 
     def set_email(self, new_email):
-        self._email = new_email
+        if "@" in new_email:
+            self._email = new_email
+
+    @property
+    def email(self):
+        print("Email accessed")
+        return self._email
 
     def say_hi_to_user(self, user):
         print(f"Sending message to {user.username}: Hi {user.username}, it's {self.username}.")
