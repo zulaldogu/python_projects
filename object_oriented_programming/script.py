@@ -52,6 +52,10 @@ class User:
     def email(self):
         print("Email accessed")
         return self._email
+    @email.setter
+    def email(self, new_email):
+        if "@" in new_email:
+            self._email = new_email
 
     def say_hi_to_user(self, user):
         print(f"Sending message to {user.username}: Hi {user.username}, it's {self.username}.")
@@ -59,6 +63,7 @@ class User:
 user1 = User("dantheman", "dan@gmail.com", "123")
 user1.set_email("danny.outlook.com")
 print(user1.get_email())
+print(user1.email)
 
 user2 = User("batman", "bat@outlook.com", "abc")
 user1.say_hi_to_user(user2)
