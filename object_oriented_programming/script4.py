@@ -19,3 +19,18 @@ class EmailService:
 
 email = EmailService()
 email.send_email()
+
+#Inheritance
+#Inheritance is a fundamental concept in OOP that involves creating new classes based on existing classes.
+
+class Vehicle:
+    def __init__(self, brand, model,year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def start(self):
+        print("Vehicle is starting")
+
+    def stop(self):
+        print("Vehicle is stopping")
