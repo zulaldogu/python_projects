@@ -3,5 +3,5 @@ with open("my_file.txt") as file: # dont need to close the file
     print(contents)
     # file.close()
 
-with open("my_file.txt", mode = "w") as file:
-    file.write("New text.")
+with open("my_file.txt", mode = "a") as file: # w is for write, a is for append
+    file.write("\nNew text.")
